@@ -1,43 +1,62 @@
 {
-  "name": "authorization",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.38",
-    "@types/react": "^18.2.14",
-    "@types/react-dom": "^18.2.7",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+    "name": "authorization",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test:unit": "jest --config ./config/jest/jest.config.ts",
+        "eject": "react-scripts eject"
+    },
+    "dependencies": {
+        "@reduxjs/toolkit": "^1.9.5",
+        "antd": "^5.7.0",
+        "axios": "^1.4.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-redux": "^8.1.1",
+        "react-router-dom": "^6.14.1",
+        "react-scripts": "5.0.1",
+        "web-vitals": "^2.1.4"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.22.9",
+        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+        "@babel/preset-env": "^7.22.9",
+        "@babel/preset-typescript": "^7.22.5",
+        "@testing-library/jest-dom": "^5.16.5",
+        "@testing-library/react": "^14.0.0",
+        "@testing-library/user-event": "^14.4.3",
+        "@types/jest": "^29.5.3",
+        "@types/node": "^20.4.2",
+        "@types/react": "^18.2.14",
+        "@types/react-dom": "^18.2.7",
+        "babel-jest": "^29.6.1",
+        "jest": "^29.6.1",
+        "jest-environment-jsdom": "^29.6.1",
+        "jwt-decode": "^3.1.2",
+        "node-sass": "^9.0.0",
+        "prettier": "^3.0.0",
+        "sass": "^1.63.6",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.1.6"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
 }
